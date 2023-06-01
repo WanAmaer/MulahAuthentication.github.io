@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Mulah</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=640, height=1136, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+            .text-left {
+            text-align: left;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-auto">
+        <header style="text-align: center;">
+            <div style="color: #ef7d04; margin: 100px;">
+                <h1 style="font-size: 85px;">MULAH</h1>
+            </div>
+        </header>
+
+        <main class="p-5">
+            <h2 class="text-left" style="font-size: 50px;">Registration</h2>
+            <h3><i>Fill up your details</i></h3>
+
+            <form onsubmit="storeRegistrationData(event)">
+                <div class="mb-3">
+                    <label for="InputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="InputName" aria-describedby="nameHelp" placeholder="Enter name">
+                    <div id="nameHelp" class="form-text" style="color: red; font-style: italic;">*Please insert a name</div>
+                </div>
+                <div class="row mb-3">
+                    <div>Birthday</div>
+                    <div class="col">
+                        <label for="inputDay" class="form-label"></label>
+                        <input type="number" class="form-control" id="inputDay" min="1" max="31" placeholder="Day">
+                    </div>
+                    <div class="col">
+                        <label for="inputMonth" class="form-label"></label>
+                        <input type="number" class="form-control" id="inputMonth" min="1" max="12" placeholder="Month">
+                    </div>
+                    <div class="col">
+                        <label for="inputYear" class="form-label"></label>
+                        <input type="number" class="form-control" id="inputYear" min="1900" max="2023" placeholder="Year">
+                    </div>
+                    <div id="birthdayHelp" class="form-text" style="color: red; font-style: italic;">*Please insert your birthday</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="name@example.com">
+                    <div id="emailHelp" class="form-text" style="color: red; font-style: italic;">Please insert a valid email address</div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="emailCheckbox">
+                        <label class="form-check-label" for="emailCheckbox">No email address</label>
+                    </div>
+                </div>
+
+                <br>
+                <div class="text-center m-5">
+                    <button type="submit" class="btn btn-primary" style="background-color: #ef7d04; border-radius: 50px; font-size: 20px; padding-left: 180px; padding-right: 180px; padding-top: 20px; padding-bottom: 20px;">Continue</button>
+                </div>
+            </form>
+        </main>
+        <br>
+
+        <footer class="fixed-bottom py-2">
+            <hr>
+            <div class="text-center">Powered by
+                <a href="https://mulahrewards.com" style="color:#3d5dac; text-decoration: none;">MulahRewards.com<br></a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Include Bootstrap JavaScript plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!--end of body container -->
+</body>
+</html>
